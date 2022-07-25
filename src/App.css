@@ -1,0 +1,131 @@
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+textarea {
+  background-color: paleturquoise;
+  border: none;
+  font-family: Arial;
+  resize: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 80vw;
+  min-height: 100vh;
+  padding: 12px 12px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search {
+  align-items: center;
+  background-color: lightgrey;
+  border-radius: 10px;
+  display: flex;
+  margin: 12px 0px;
+  padding: 8px;
+}
+
+.search input {
+  background-color: lightgrey;
+  border: none;
+  width: 100%;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.notes-list {
+  display: grid;
+  grid-gap: 1.2rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.note {
+  background-color: lemonchiffon;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
+  padding: 1.2rem;
+  white-space: pre-wrap;
+}
+
+.note.new {
+  background-color: paleturquoise;
+}
+
+.note-footer {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete-icon {
+  cursor: pointer;
+}
+
+.delete-icon:hover {
+  color: indianred;
+}
+
+.save {
+  background-color: white;
+  border-radius: 16px;
+  border: none;
+  padding: 5px 10px;
+}
+
+.save:hover {
+  background-color: ghostwhite;
+  cursor: pointer;
+}
+
+.toggle {
+  border-radius: 16px;
+  border: none;
+  padding: 5px 10px;
+}
+
+.toggle:hover {
+  cursor: pointer;
+}
+
+.toggle.dark-mode {
+  color: whitesmoke;
+  background-color: dimgray;
+}
+
+.toggle.dark-mode:hover {
+  background-color: black;
+}
+
+.toggle.light-mode {
+  color: whitesmoke;
+  background-color: dimgray;
+}
+
+.toggle.light-mode:hover {
+  color: black;
+  background-color: whitesmoke;
+}
+
+.dark-mode {
+  background-color: black;
+}
+
+.dark-mode h1 {
+  color: whitesmoke;
+}
